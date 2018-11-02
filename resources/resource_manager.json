@@ -1,0 +1,53 @@
+{
+	"fonts": [
+		{
+			"name": "atwriter",
+			"path": "atwriter.ttf"
+		},
+		{
+			"name": "couriernew1",
+			"path": "cour.ttf"
+		},
+		{
+			"name": "couriernew2",
+			"path": "courbd.ttf"
+		},
+		{
+			"name": "couriernew3",
+			"path": "courbi.ttf"
+		},
+		{
+			"name": "couriernew4",
+			"path": "couri.ttf"
+		}
+	],
+
+	"textures" : [
+		{
+			"name": "default",
+			"path": "default.png"	
+		},
+
+		{
+			"name": "map-1",
+			"path": "map-1.png"
+		},
+
+		{
+			"name": "SS_dummy-character_idle",
+			"path": "SS_dummy-character_idle.png"
+		},
+		{
+			"name": "SS_dummy-character_walk",
+			"path": "SS_dummy-character_walk.png"
+		}
+	],
+
+	"sounds" : [
+		
+	],
+
+	"music" : [
+		
+	]
+}

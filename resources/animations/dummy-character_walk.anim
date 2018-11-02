@@ -1,0 +1,9 @@
+{
+	"name" : "dummy-character_walk",
+	"spritesheet_path" : "SS_dummy-character_walk",
+	"spritesheet_rows" : 1,
+	"spritesheet_cols" : 2,
+	"frames" : [1, 2],
+	"speed" : 15,
+	"looping" : true
+}
