@@ -1,2 +1,5 @@
 .vs/*
 Builds/*
+Game/x64/*
+GameEngine/x64/*
+x64/*
