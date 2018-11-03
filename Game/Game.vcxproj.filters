@@ -22,6 +22,9 @@
     <Filter Include="Header Files\game-objects\main-character">
       <UniqueIdentifier>{04cabfce-f150-44b5-9cc0-9c109f4661ce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\game-objects\projectiles">
+      <UniqueIdentifier>{0a67b60b-e39c-4a2b-8373-82dac5239b8c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -36,6 +39,15 @@
     <ClInclude Include="game-objects\main-character\MainCharacter.h">
       <Filter>Header Files\game-objects\main-character</Filter>
     </ClInclude>
+    <ClInclude Include="game-objects\main-character\HookGun.h">
+      <Filter>Header Files\game-objects\main-character</Filter>
+    </ClInclude>
+    <ClInclude Include="game-objects\main-character\HookProjectile.h">
+      <Filter>Header Files\game-objects\main-character</Filter>
+    </ClInclude>
+    <ClInclude Include="game-objects\projectiles\Projectile.h">
+      <Filter>Header Files\game-objects\projectiles</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -45,6 +57,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="game-objects\main-character\MainCharacter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game-objects\main-character\HookGun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game-objects\projectiles\Projectile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game-objects\main-character\HookProjectile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

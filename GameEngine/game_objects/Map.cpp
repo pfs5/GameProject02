@@ -12,6 +12,8 @@ Map::Map(const std::string& name):
 {
 	auto rb = createRigidBody();
 	rb->setGravity(false);
+
+	setObjectTag("terrain");
 }
 
 Map::~Map()
@@ -55,7 +57,7 @@ void Map::loadColliders(const std::string& dataName)
 			float width = col["width"];
 			float height = col["height"];
 
-			auto newCollider = createCollider(sf::Vector2f{ x, y }, sf::Vector2f{ width, height });
+			auto newCollider = createCollider(sf::Vector2f{ x + width / 2.f, y + height / 2 }, sf::Vector2f{ width, height });
 			newCollider->setTrigger(false, getRigidBody());
 			newCollider->setStatic(true);
 		}

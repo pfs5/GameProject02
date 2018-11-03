@@ -7,7 +7,7 @@
 namespace Display {
 	constexpr uint16_t HEIGHT = 900;
 	constexpr uint16_t WIDTH = static_cast<uint16_t>(HEIGHT * 16.f / 9.f);
-	const std::string TITLE = "Topdown Shooter";
+	const std::string TITLE = "Game Project 002";
 
 	const float UPS = 120;   // 60
 

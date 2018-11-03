@@ -6,11 +6,14 @@
 #include "../rendering/Rendering.h"
 #include "../utility/json.h"
 #include "../resource_management/ResourceManager.h"
+#include "../utility/FloatOperations.h"
+#include "../utility/VectorOperations.h"
 
 Animation::Animation(const std::string & name) :
 	_currentFrame{0u},
 	_timer{0.f},
-	_isPlaying{false}
+	_isPlaying{false},
+	_invertion{1.f, 1.f}
 {
 	std::string path = ConfigManager::getInstance().getString("data-paths", "animations-folder") + name + ".anim";
 	if (!path.empty())
@@ -69,6 +72,8 @@ void Animation::setSize(const sf::Vector2f &size)
 		size.y / _frameHeight
 	};
 
+	scale = VectorOperations::memberwiseMultiplication(scale, _invertion);
+
 	_sprite.setScale(scale);
 }
 
@@ -95,6 +100,33 @@ bool Animation::isLooping() const
 void Animation::setIsLooping(bool value)
 {
 	_looping = value;
+}
+
+void Animation::setInvertion(const sf::Vector2f &inv)
+{
+	float x = inv.x > 0.f ? 1.f : -1.f;
+	float y = inv.y > 0.f ? 1.f : -1.f;
+
+	auto scale = _sprite.getScale();
+	if (FloatOperations::compare(x, _invertion.x) != 0)
+	{
+		scale.x *= -1.f;
+	}
+
+	if (FloatOperations::compare(y, _invertion.y) != 0)
+	{
+		scale.y *= -1.f;
+	}
+
+	_sprite.setScale(scale);
+
+	_invertion.x = x;
+	_invertion.y = y;
+}
+
+void Animation::setOrigin(const sf::Vector2f& origin)
+{
+	_sprite.setOrigin(sf::Vector2f{ _frameWidth / 2.f, _frameHeight / 2.f } + origin);
 }
 
 void Animation::play()

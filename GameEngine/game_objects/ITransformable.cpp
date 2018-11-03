@@ -28,4 +28,5 @@ void ITransformable::clearParent()
 void ITransformable::setParentGlobalPosition(sf::Vector2f pos)
 {
 	_globalPosition = pos + _localPosition;
+	setLocalPosition(_localPosition);
 }

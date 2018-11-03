@@ -151,13 +151,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="game-objects\main-character\HookGun.h" />
+    <ClInclude Include="game-objects\main-character\HookProjectile.h" />
     <ClInclude Include="game-objects\main-character\MainCharacter.h" />
+    <ClInclude Include="game-objects\projectiles\Projectile.h" />
     <ClInclude Include="game-states\MainScene.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="game-objects\main-character\HookGun.cpp" />
+    <ClCompile Include="game-objects\main-character\HookProjectile.cpp" />
     <ClCompile Include="game-objects\main-character\MainCharacter.cpp" />
+    <ClCompile Include="game-objects\projectiles\Projectile.cpp" />
     <ClCompile Include="game-states\MainScene.cpp" />
     <ClCompile Include="Game.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>

@@ -46,6 +46,9 @@
     <Filter Include="Header Files\rendering">
       <UniqueIdentifier>{c85f7efa-4d02-4172-b187-7a0625e3c056}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\ui">
+      <UniqueIdentifier>{69f37da7-e725-4498-9fe6-47baa24e4539}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -141,6 +144,12 @@
     <ClInclude Include="game_objects\Map.h">
       <Filter>Header Files\game_objects</Filter>
     </ClInclude>
+    <ClInclude Include="ui\UIElement.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\UILine.h">
+      <Filter>Header Files\ui</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="animation\Animation.cpp">
@@ -201,6 +210,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="game_objects\Map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\UILine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

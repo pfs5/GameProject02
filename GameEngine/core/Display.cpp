@@ -21,7 +21,7 @@ namespace Display {
 		window->setVerticalSyncEnabled(true);
 
 		window->setPosition(sf::Vector2i{ 100u, 0u });
-		window->setMouseCursorVisible(false);
+		window->setMouseCursorVisible(true);
 	}
 
 	void clear(const sf::Color& _color) {
@@ -74,6 +74,8 @@ namespace Display {
 		{
 			return sf::Vector2f{};
 		}
+
+		// #TODO Add main camera abstraction and use for calculation
 
 		sf::Vector2f viewCenter = Rendering::getCameras()[0]->getView().getCenter();
 		sf::Vector2f viewPosition = viewCenter - VectorOperations::utof(getWindow().getSize()) / 2.f;

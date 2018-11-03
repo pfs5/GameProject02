@@ -1,0 +1,9 @@
+{
+	"name" : "hook-gun_idle",
+	"spritesheet_path" : "SS_hook-gun_idle",
+	"spritesheet_rows" : 1,
+	"spritesheet_cols" : 2,
+	"frames" : [1, 2],
+	"speed" : 15,
+	"looping" : true
+}

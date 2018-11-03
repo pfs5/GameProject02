@@ -20,6 +20,8 @@ public:
 	void setRotation(float rotation);
 	bool isLooping() const;
 	void setIsLooping(bool value);
+	void setInvertion(const sf::Vector2f &inv);
+	void setOrigin(const sf::Vector2f& origin);
 
 	// Control
 	void play();
@@ -38,6 +40,7 @@ private:
 	std::vector<float> _frameTimes;
 	float _speed;
 	bool _looping;
+	sf::Vector2f _invertion;
 
 	// Visual
 	sf::Sprite _sprite;

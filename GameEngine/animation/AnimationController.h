@@ -28,6 +28,7 @@ class AnimationController : public AnimationObserver {
 
 	std::vector<int> _transitions;
 	std::vector<std::map<std::string, int>> _triggerTransitions;
+
 public:
 	AnimationController(float _rotation = 0.f);
 	~AnimationController();
@@ -50,10 +51,12 @@ public:
 
 	// Animation observer
 	virtual void onAnimationEnd() override;
+
 private:
 	void playAnimation(int _animation, bool _playInstantly = true);
 	bool loadFromFile(std::string _name);
 	void playNextAnimation();
+
 #pragma region Getters and setters
 public:
 	inline sf::Vector2f getPosition() const{ return _position; };
@@ -88,6 +91,22 @@ public:
 		for (auto &an : _animations)
 		{
 			an->setSize(size);
+		}
+	}
+
+	inline void setInvertion(const sf::Vector2f &invertion)
+	{
+		for (auto &an : _animations)
+		{
+			an->setInvertion(invertion);
+		}
+	}
+
+	inline void setOrigin(const sf::Vector2f &origin)
+	{
+		for (auto &an : _animations)
+		{
+			an->setOrigin(origin);
 		}
 	}
 #pragma endregion

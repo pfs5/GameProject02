@@ -189,6 +189,8 @@
     <ClInclude Include="settings\GameSettings.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="ui\UIElement.h" />
+    <ClInclude Include="ui\UILine.h" />
     <ClInclude Include="utility\FloatOperations.h" />
     <ClInclude Include="utility\Functions.h" />
     <ClInclude Include="utility\json.h" />
@@ -215,6 +217,7 @@
     <ClCompile Include="rendering\Camera.cpp" />
     <ClCompile Include="rendering\Rendering.cpp" />
     <ClCompile Include="resource_management\ResourceManager.cpp" />
+    <ClCompile Include="ui\UILine.cpp" />
     <ClCompile Include="utility\Functions.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

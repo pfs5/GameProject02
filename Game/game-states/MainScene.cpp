@@ -1,6 +1,7 @@
 #include "MainScene.h"
 #include "resource_management/ResourceManager.h"
 #include "../game-objects/main-character/MainCharacter.h"
+#include "../game-objects/main-character/HookGun.h"
 
 MainScene::MainScene()
 {
@@ -21,6 +22,10 @@ MainScene::MainScene()
 	auto mainChar = new MainCharacter{};
 	mainChar->setLocalPosition(sf::Vector2f{ 500.f, 500.f });
 	addGameObjectToState(mainChar);
+
+	auto hookGun = new HookGun{};
+	addGameObjectToState(hookGun);
+	mainChar->attachHookGun(hookGun);
 }
 
 MainScene::~MainScene()

@@ -1,0 +1,14 @@
+{
+    "animations": [
+        {
+            "_posx": 99,
+            "_posy": 150,
+            "islooping": "true",
+            "name": "hook-gun_idle",
+            "speed": "5.00"
+        }
+    ],
+    "transitions": [
+
+    ]
+}

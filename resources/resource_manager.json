@@ -40,6 +40,11 @@
 		{
 			"name": "SS_dummy-character_walk",
 			"path": "SS_dummy-character_walk.png"
+		},
+
+		{
+			"name": "SS_hook-gun_idle",
+			"path": "SS_hook-gun_idle.png"
 		}
 	],
 
